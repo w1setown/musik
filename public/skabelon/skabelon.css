@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+  body, h1 {
+    margin: 0;
+
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(240, 239, 239); 
+  }
+
+  .menu {
+    position: sticky;
+    top: 0;
+    background-color: rgba(53, 52, 52, 0.5); 
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    z-index: 100;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .menu-top {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  h1 {
+    font-family: 'What-a-Bloat,   cursive';
+    background : url('/assets/photos/brick-wall.jpg');   
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 200px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  h1 p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px; 
+    font-size: 16px; 
+  }
+  
+
+  .song {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 10fr;
+    gap: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+  }
+
+  
+  .song h2 {
+    
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  .spotify-embed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    grid-row: 2;
+    grid-column: 2;
+  }
+  
+  .spotify-embed iframe {
+    width: 100%;
+    height: auto;
+  }
+  
+  .song p {
+    padding: 0px;
+    grid-row: 2;
+    grid-column: 1;
+    padding: 5%;
+  }
+
+  .song p span {
+    display: inline;
+    background-color: rgba(255, 254, 254, 0.151);
+    padding: .5px;
+  }
